@@ -1,0 +1,25 @@
+<nav>
+  <div class="nav-wrapper bg-dark">
+    <img src="/assets/logo-Ala-Too.png" width="50" style="vertical-align:middle" alt="Logo of University">
+    <a href="/" class="brand-logo">Новости университета</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {{#if isHome}}
+        <li class="active" ><a href="/">Главная</a></li>
+      {{else}}
+        <li><a href="/">Главная</a></li>
+      {{/if}}
+
+      {{#if isNews}}
+        <li class="active"><a href="/news">Новости</a></li>
+      {{else}}
+        <li><a href="/news">Новости</a></li>
+      {{/if}}
+
+      {{#if isAdd}}
+        <li class="active"><a href="/add">Добавить новости</a></li>
+      {{else}}
+        <li><a href="/add">Добавить новости</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>

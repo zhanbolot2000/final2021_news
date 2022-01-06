@@ -1,0 +1,23 @@
+<h3>Редактировать {{news.title}}</h3>
+
+<form class="add-form" action="/news/edit" method="POST">
+    <div class="input-field">
+        <input id="title" name="title" type="text" class="validate" required value="{{news.title}}">
+        <label for="title">Тема новости</label>
+        <span class="helper-text" data-error="Введите тему новости"></span>
+    </div>
+    <div class="input-field">
+        <input id="description" name="description" type="text" class="validate" required value="{{news.description}}">
+        <label for="description">Описание</label>
+        <span class="helper-text" data-error="Введите описание новости"></span>
+    </div>
+    <div class="input-field">
+        <input id="img" name="img" type="text" class="validate" required value="{{news.img}}">
+        <label for="img">URL картинки</label>
+        <span class="helper-text" data-error="Введите URL картинки"></span>
+    </div>
+
+    <input type="hidden" name="id" value="{{news.id}}">
+
+    <button class="btn btn-primary">Редактировать</button>
+</form>
