@@ -39,7 +39,7 @@ To delete a news you shoud acces <a>/news/id/delete</a>
 To install this project:
 
 ```bash
-npm clone https://github.com/zhanbolot2000/zhanbolot_final.git 
+npm clone https://github.com/zhanbolot2000/final2021_news 
 # this command will clone this project
 ```
 
